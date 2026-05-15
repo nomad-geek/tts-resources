@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="745" height="1040" viewBox="0 0 745 1040">
+  <defs>
+    <!-- Card border gradient (white/Plains style for apology) -->
+    <linearGradient id="borderGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a1a1a;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#2a2a2a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0a0a0a;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- White mana card frame gradient -->
+    <linearGradient id="frameGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#f5e8c8;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#e8d5a0;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#d4b87a;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- Title bar gradient -->
+    <linearGradient id="titleGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#fff8e0;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#d4b87a;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- Art background sky -->
+    <linearGradient id="skyGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#87ceeb;stop-opacity:1" />
+      <stop offset="60%" style="stop-color:#ffd4a3;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#8b6f47;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- Text box gradient -->
+    <linearGradient id="textBoxGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#f8ecc8;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#e8d5a0;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- Mana symbol radial -->
+    <radialGradient id="manaWhite" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#fffdf0;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#d4c890;stop-opacity:1" />
+    </radialGradient>
+    
+    <!-- Drop shadow filter -->
+    <filter id="dropShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="3"/>
+      <feOffset dx="2" dy="2" result="offsetblur"/>
+      <feComponentTransfer>
+        <feFuncA type="linear" slope="0.5"/>
+      </feComponentTransfer>
+      <feMerge>
+        <feMergeNode/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <!-- Black card border -->
+  <rect x="0" y="0" width="745" height="1040" rx="35" ry="35" fill="url(#borderGrad)"/>
+  
+  <!-- Inner card frame -->
+  <rect x="30" y="30" width="685" height="980" rx="20" ry="20" fill="url(#frameGrad)"/>
+  
+  <!-- Title bar -->
+  <rect x="50" y="50" width="645" height="60" rx="8" ry="8" fill="url(#titleGrad)" stroke="#5a4520" stroke-width="2"/>
+  
+  <!-- Card name -->
+  <text x="70" y="92" font-family="Georgia, serif" font-size="36" font-weight="bold" fill="#1a1a1a" font-style="italic">My Bad</text>
+  
+  <!-- Mana cost (1 generic + 1 white) -->
+  <circle cx="660" cy="80" r="22" fill="url(#manaWhite)" stroke="#5a4520" stroke-width="2"/>
+  <text x="660" y="90" font-family="Georgia, serif" font-size="26" font-weight="bold" fill="#2a2a2a" text-anchor="middle">☀</text>
+  
+  <circle cx="612" cy="80" r="22" fill="#c8c0a0" stroke="#5a4520" stroke-width="2"/>
+  <text x="612" y="90" font-family="Georgia, serif" font-size="22" font-weight="bold" fill="#2a2a2a" text-anchor="middle">1</text>
+  
+  <!-- Art frame -->
+  <rect x="50" y="120" width="645" height="430" fill="#5a4520" stroke="#3a2510" stroke-width="3"/>
+  <rect x="58" y="128" width="629" height="414" fill="url(#skyGrad)"/>
+  
+  <!-- Art: A person on knees with hands up, "sorry" pose -->
+  <!-- Ground/floor -->
+  <rect x="58" y="450" width="629" height="92" fill="#6b5638"/>
+  <ellipse cx="372" cy="455" rx="280" ry="10" fill="#3a2510" opacity="0.3"/>
+  
+  <!-- Sun in background -->
+  <circle cx="372" cy="220" r="45" fill="#fff8d4" opacity="0.85"/>
+  <circle cx="372" cy="220" r="60" fill="#fff8d4" opacity="0.3"/>
+  
+  <!-- Clouds -->
+  <ellipse cx="150" cy="180" rx="50" ry="15" fill="white" opacity="0.7"/>
+  <ellipse cx="170" cy="175" rx="35" ry="12" fill="white" opacity="0.7"/>
+  <ellipse cx="580" cy="200" rx="60" ry="18" fill="white" opacity="0.6"/>
+  <ellipse cx="600" cy="195" rx="40" ry="14" fill="white" opacity="0.6"/>
+  
+  <!-- Figure on knees apologizing -->
+  <!-- Shadow -->
+  <ellipse cx="372" cy="495" rx="80" ry="8" fill="#000" opacity="0.3"/>
+  
+  <!-- Legs/lower body (kneeling) -->
+  <path d="M 320 480 Q 320 440 340 425 L 405 425 Q 425 440 425 480 Z" fill="#4a6fa5" stroke="#2a3f6a" stroke-width="2"/>
+  <ellipse cx="340" cy="490" rx="25" ry="10" fill="#3a3a3a"/>
+  <ellipse cx="405" cy="490" rx="25" ry="10" fill="#3a3a3a"/>
+  
+  <!-- Torso -->
+  <path d="M 335 430 Q 330 380 340 350 L 405 350 Q 415 380 410 430 Z" fill="#5a8fd5" stroke="#2a3f6a" stroke-width="2"/>
+  
+  <!-- Arms raised in "please forgive me" pose -->
+  <path d="M 340 360 Q 310 340 295 300 Q 290 290 300 285 Q 315 290 320 310 Q 335 350 345 365 Z" fill="#5a8fd5" stroke="#2a3f6a" stroke-width="2"/>
+  <path d="M 405 360 Q 435 340 450 300 Q 455 290 445 285 Q 430 290 425 310 Q 410 350 400 365 Z" fill="#5a8fd5" stroke="#2a3f6a" stroke-width="2"/>
+  
+  <!-- Hands (palms together, prayer style) -->
+  <ellipse cx="295" cy="290" rx="12" ry="15" fill="#f4c794" stroke="#8b6f47" stroke-width="1.5"/>
+  <ellipse cx="450" cy="290" rx="12" ry="15" fill="#f4c794" stroke="#8b6f47" stroke-width="1.5"/>
+  
+  <!-- Head -->
+  <ellipse cx="372" cy="330" rx="30" ry="35" fill="#f4c794" stroke="#8b6f47" stroke-width="2"/>
+  
+  <!-- Hair -->
+  <path d="M 345 315 Q 342 295 360 290 Q 372 285 384 290 Q 402 295 399 315 Q 395 305 380 308 Q 372 306 364 308 Q 349 305 345 315 Z" fill="#3a2510"/>
+  
+  <!-- Eyes (worried/closed) -->
+  <path d="M 358 328 Q 363 326 367 328" stroke="#1a1a1a" stroke-width="2" fill="none" stroke-linecap="round"/>
+  <path d="M 378 328 Q 383 326 387 328" stroke="#1a1a1a" stroke-width="2" fill="none" stroke-linecap="round"/>
+  
+  <!-- Eyebrows (worried) -->
+  <path d="M 355 322 Q 362 320 368 322" stroke="#1a1a1a" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+  <path d="M 377 322 Q 383 320 390 322" stroke="#1a1a1a" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+  
+  <!-- Mouth (grimace/sorry face) -->
+  <path d="M 362 348 Q 372 345 382 348" stroke="#1a1a1a" stroke-width="2" fill="none" stroke-linecap="round"/>
+  
+  <!-- Sweat drop -->
+  <path d="M 405 320 Q 408 328 405 332 Q 402 328 405 320 Z" fill="#6ab0e8" stroke="#3a80b8" stroke-width="1"/>
+  
+  <!-- Speech bubble with "..." -->
+  <ellipse cx="500" cy="280" rx="45" ry="25" fill="white" stroke="#1a1a1a" stroke-width="2"/>
+  <path d="M 470 295 L 460 310 L 475 300 Z" fill="white" stroke="#1a1a1a" stroke-width="2"/>
+  <text x="500" y="290" font-family="Georgia, serif" font-size="28" font-weight="bold" fill="#1a1a1a" text-anchor="middle">...</text>
+  
+  <!-- Decorative broken vase / spilled drink near the figure -->
+  <ellipse cx="220" cy="495" rx="35" ry="6" fill="#8b3a3a" opacity="0.6"/>
+  <path d="M 200 495 Q 205 480 215 478 L 230 478 Q 240 480 240 495 Z" fill="#a0522d" stroke="#5a2510" stroke-width="1.5"/>
+  <path d="M 245 495 L 260 490 L 255 498 Z" fill="#a0522d" stroke="#5a2510" stroke-width="1.5"/>
+  
+  <!-- Type line -->
+  <rect x="50" y="560" width="645" height="40" rx="6" ry="6" fill="url(#titleGrad)" stroke="#5a4520" stroke-width="2"/>
+  <text x="70" y="588" font-family="Georgia, serif" font-size="22" font-weight="bold" fill="#1a1a1a" font-style="italic">Instant — Apology</text>
+  
+  <!-- Set symbol (a little "oops" symbol) -->
+  <circle cx="665" cy="580" r="15" fill="#c8c0a0" stroke="#5a4520" stroke-width="1.5"/>
+  <text x="665" y="588" font-family="Georgia, serif" font-size="16" font-weight="bold" fill="#5a2510" text-anchor="middle">!</text>
+  
+  <!-- Text box -->
+  <rect x="50" y="610" width="645" height="320" rx="8" ry="8" fill="url(#textBoxGrad)" stroke="#5a4520" stroke-width="2"/>
+  
+  <!-- Rules text -->
+  <text x="70" y="648" font-family="Georgia, serif" font-size="19" fill="#1a1a1a">
+    <tspan x="70" dy="0" font-weight="bold">Give this card to a player you have wronged.</tspan>
+    <tspan x="70" dy="28">They keep it as a token of your sincere regret.</tspan>
+    <tspan x="70" dy="36" font-weight="bold">At any time, the holder may redeem this</tspan>
+    <tspan x="70" dy="24" font-weight="bold">card to demand one (1) reasonable favor</tspan>
+    <tspan x="70" dy="24" font-weight="bold">from the original giver.</tspan>
+    <tspan x="70" dy="32">Return the card to the giver upon redemption.</tspan>
+    <tspan x="70" dy="32" font-style="italic" font-size="17">"In hindsight, tapping that land really</tspan>
+    <tspan x="70" dy="20" font-style="italic" font-size="17">wasn't worth the table-flipping incident."</tspan>
+    <tspan x="70" dy="22" font-style="italic" font-size="17">                                — Anonymous, probably</tspan>
+  </text>
+  
+  <!-- Bottom info bar -->
+  <text x="60" y="980" font-family="Georgia, serif" font-size="14" fill="#f5e8c8" font-style="italic">Illus. The Regrettable Incident of '24</text>
+  
+  <!-- Card number / set info -->
+  <text x="60" y="1000" font-family="Arial, sans-serif" font-size="11" fill="#f5e8c8">001/100 R</text>
+  <text x="685" y="1000" font-family="Arial, sans-serif" font-size="11" fill="#f5e8c8" text-anchor="end">SRY • EN</text>
+  
+  <!-- Copyright -->
+  <text x="372" y="1000" font-family="Arial, sans-serif" font-size="11" fill="#f5e8c8" text-anchor="middle">™ &amp; © Friend Group, LLC. Sorry about that.</text>
+  
+  <!-- Holofoil corner accent (small) -->
+  <circle cx="690" cy="950" r="8" fill="#f5e8c8" opacity="0.4"/>
+  <text x="690" y="954" font-family="Arial, sans-serif" font-size="10" fill="#5a4520" text-anchor="middle" font-weight="bold">★</text>
+</svg>
